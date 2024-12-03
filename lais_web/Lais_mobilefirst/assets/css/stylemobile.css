@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* é uma pratica usada no desenvolvimento web para remover ou padronizar os estilos padroes dos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 1- define a imagem de fundo
+   2- define a posição de uma imagem de fundo
+   3- controla se a imagem de fundo repete ou não
+   4- se deve rolar ou ficar fixa enquanto o conteúdo é rolado.*/
+
+
+   /* pixel -> para tamanho e dimensões (Largura X Altura)
+   O "vh" e ou "vw" serve para largura de tela (mobile first)
+   Já o "em" e ou "rem", serve somente para fontes (mobile first? CCS3) */
+
+html{
+    height: 100vw;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #52015a 50%, #b48400 100%);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+    
+header {
+    background-color: #0074b4;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    margin-top: 17px;
+}
+
+#burger {
+    background-color: #f3eedd;
+    display: block;
+    text-align: center; 
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+} 
+
+#burger:hover {
+    background-color: #d4ef07;
+}
+
+menu{
+    text-align: center;
+    list-style-type: none;
+    width: 90vw;
+    margin: auto;
+}
+
+menu>ul {
+    list-style-type: none;
+}
+
+
+/* O que você entende linha por linha deste código */
+menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #050a09;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(245, 126, 8);
+    margin: auto;
+}
+
+menu>ul>li>a:hover {
+    background-color: #c2551b;
+    color: whitesmoke;
+    text-decoration: none;
+} 
+
+main {
+    background-image: linear-gradient(to bottom, #0074b4 50%, #00b34c 100%); 
+    width: 90vw;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 0px;
+    padding: 3px;
+    color: rgb(227, 227, 233);
+}
+
+article>h2 {
+    color: rgb(3, 2, 0);
+    padding-bottom: 17px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 17px;
+    text-indent: 17px;
+}
+
+footer{
+    background-color:  #0074b4;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    width: 90vw;
+    padding: 7px;
+    margin: auto;
+}
+
+img{ 
+    display: block; 
+    margin: auto; 
+}  
+
+img#mobile{
+    display: block;
+}
+
+img#tablet{
+    display: none;
+
+}
+
+img#print{ 
+    display: none;
+}
+
+img#pc{
+    display: none;
+}
+
+img#tv{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url("../back-tablet.jpg");
+
+    }
+
+    #burger{
+       display: none;
+    }
+
+    menu{
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: darkgreen;
+    
+    }
+
+    menu>ul>li{
+        display: inline-block;
+        background-color: rgb(0, 58, 234);
+    
+    }
+
+    main{
+        width: 90wv;
+        margin: auto;    
+}
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image:url("../back-pc.jpg");
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: #c30ed0;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-image:url("../back-tv.jpg");
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: #10d917;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}

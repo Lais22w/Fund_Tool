@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*
+mais um comando de comentario de código,
+somente para CSS.
+*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, #a2002b, #0c09d3); 
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    /* justify-content: flex-start;
+    display: flexbox; */
+}
+
+header{
+   color: rgb(216, 210, 221);
+   margin: 10px;
+}
+
+h1{
+    color: black;
+    margin: 10px;
+}
+
+main{
+    margin: 10px;
+    color: rgb(246, 240, 245);
+}
+
+footer{
+
+    border: 4px;
+    color: rgb(236, 98, 0);
+    margin: 10px;
+
+
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border: solid 3px orange;
+    
+}
