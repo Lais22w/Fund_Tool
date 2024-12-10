@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile_first</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/stylemobile.css">
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Mobile first</h1>
+    </header>
+    <span id="burger" class="material-symbols-outlined" onclick="apertarMenu()">
+        menu
+    </span>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="#">mobile</a></li>
+            <li><a href="#"> tablet</a></li>
+            <li><a href="#">smart tv</a></li>
+            <li><a href="#">desktop</a></li>
+        </ul>
+    </menu>
+    <!-- <nav>  -->
+    
+        <!-- <a href="/assets/smartphone.png"></a> mobile📱
+        <a href="/assets/tablet.png"></a> tablet📲
+        <a href="/assets/computer.png"></a> computer🖥
+        <a href="/assets/smarttv.png"></a> tv📺  -->
+    
+    <!-- </nav> -->
+
+    <main>
+
+         <img src="./assets/icon-phone.png" alt="versão mobile" id="mobile" width="150" height="150">
+         <img src="./assets/icon-tablet.png" alt="versão mobile" id="tablet" width="150" height="150">
+         <img src="./assets/icon-pc.png" alt="versão mobile" id="pc" width="150" height="150">
+         <img src="./assets/icon-tv.png" alt="versão mobile" id="tv" width="150" height="150">
+
+       <article>
+          <h2>Testando medias queries</h2>
+          <p>Ipsum dolor sit amet consectetur adipisicing elit.
+             Dolores iste neque ab sunt! Labore veritatis praesentium at, perspiciatis enim alias accusantium excepturi deleniti mollitia esse,
+             laboriosam nulla earum ex voluptate?
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              In tempore temporibus sunt voluptate. Corporis quaerat, fugiat nisi rem excepturi labore vel.
+             Nam, ut mollitia asperiores nulla earum eaque laboriosam praesentium.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Praesentium provident ipsum libero, dolore porro nemo voluptatibus quae numquam dolorum aperiam perferendis minus,
+             fugit eaque possimus esse hic facere iusto amet.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eaque amet ea assumenda dolore quis, distinctio in cumque, quo natus repellat totam minima iure placeat veniam maxime obcaecati inventore? Beatae, quos?
+             Adipisci voluptates incidunt suscipit voluptate quisquam voluptatibus animi nemo optio eos facere quia repudiandae ab quidem totam ipsum, ea ipsam odit? Corrupti.</p>
+       </article>
+    </main>
+
+    <footer>
+        <p>
+            Lais - 2024
+        </p>
+    </footer>
+</body>
+<script src="./assets/js/scriptmq.js"></script>
+    
+</html>
